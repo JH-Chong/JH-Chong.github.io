@@ -1,0 +1,108 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face
+{
+	src: url(../fonts/baloo2.ttf);
+	font-family: baloo2;
+}
+
+body
+{
+	background: #000;
+	color: #fff;
+}
+
+.container
+{
+	width: 100%;
+	height: 200vh;
+	font-family: baloo2;
+}
+
+/***************/
+/* Navigation */
+/*************/
+.navigation
+{
+	position: -webkit-sticky; /* safari, ios, android, chrome */
+	position: -moz-sticky; /* firefox */
+	position: -ms-sticky; /* internet explorer */
+	position: -o-sticky; /* opera */
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background: #000;
+	z-index: 2;
+}
+
+.navigation ul
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.navigation ul li
+{
+	display: inline-block;
+	line-height: 4.6875rem;
+}
+
+.navigation ul li a
+{
+	display: block;
+	text-decoration: none; /* removes underline */
+	font-size: 1.1rem;
+	color: #fff;
+	padding: 0 20px;
+}
+
+#side-menu-button
+{
+	display: none;
+}
+
+.navigation ul li:not(#side-menu-button) a:hover /* exclude styling for image alt text */
+{
+	font-size: 1.2rem;
+	color: #cc0000;
+	transition: all 0.3s ease;
+}
+
+.navigation hr
+{
+	background: #fff;
+}
+
+/*****************/
+/* Introduction */
+/***************/
+.introduction
+{
+	z-index: 0;
+}
+
+.parallax
+{
+	background: url(../images/home/weiqi_1.jpg) no-repeat fixed 100%;
+	background-size: cover;
+}
+
+.parallax-spacing
+{
+	padding-top: 21%;
+	padding-bottom: 21%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.parallax-spacing h1
+{
+	text-align: center;
+	font-size: 300%;
+}
