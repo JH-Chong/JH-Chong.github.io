@@ -12,64 +12,71 @@
 
 <body>
 	<div class="container">
-		<!-- MAIN MENU (FOR DESKTOP) -->
-		<nav class="navigation" id="main-menu">
+		<!----- SIDE MENU (FOR MOBILE) ----->
+		<nav id="side-menu">
+			<span id="side-menu-close-button">X</span>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="history.html">History</a></li>
-				<li><a href="champions.html">Champions</a></li>
-				<li><a href="tutorials.html">Tutorials</a></li>
-				<li id="side-menu-button">
-					<a>
-						<img src="images/HamburgerMenu.png" alt="Hamburger Menu">
-					</a>
-				</li>
+				<li><a href="weiqi.html">Weiqi</a></li>
+			</ul>
+		</nav>
+
+		<!----- MAIN MENU (FOR DESKTOP) ----->
+		<nav id="main-menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="weiqi.html">Weiqi</a></li>
+				<li id="side-menu-button"><img src="images/HamburgerMenu.png" alt="Hamburger Menu"></li>
 			</ul>
 			<hr>
 		</nav>
 
-		<!-- SIDE MENU (FOR MOBILE) -->
-		<nav class="navigation" id="side-menu">
-			<ul>
-				
-			</ul>
-		</nav>
-
-		<!-- MAIN CONTENT OF THIS PAGE -->
+		<!----- MAIN CONTENT OF THIS PAGE ----->
 		<main id="main">
-			<div class="introduction">
-				<div class="parallax" id="parallax-1">
-					<div class="parallax-spacing">
-						<h1>Did you know that Go is pronounced as "Wei Qi" in Mandarin?</h1>
-					</div>
+			<!-----  ----->
+			<div class="parallax">
+				<div class="parallax-spacing">
+					<h1>Did you know that Go was invented more than 2,500 years ago in China?</h1>
 				</div>
-				<!--
-				<div class="parallax" id="parallax-2">
-					<div class="parallax-spacing">
-						<div class="parallax-blur">
-							<h1>TEXT</h1>
-						</div>
-					</div>
-				</div>
-				<div class="parallax" id="parallax-3">
-					<div class="parallax-spacing">
-						<div class="parallax-blur">
-							<h1>TEXT</h1>
-						</div>
-					</div>
-				</div>
-				-->
 			</div>
-			<div class="ranks">
-				
+
+			<br>
+			<br>
+			<br>
+
+			<!----- WHAT IS GO ----->
+			<div class="what-is-go">
+				<h1>What is Go?</h1>
+				<hr>
+				<br>
+				<p>Go is a 2-player abstract strategy board game which was invented more than 2,500 years ago in China and it is believed to be the oldest board game in history. According to a 2016 survey by the International Go Federation, there are over 46 million people in the world who know how to play Go.</p>
 			</div>
-			<div class="learn">
-				
+
+			<br>
+			<br>
+			<br>
+
+			<!----- RULES ----->
+			<div class="rules">
+				<h1>Basic rules of Go</h1>
+				<hr>
+				<br>
+				<iframe width="1125" height="633" src="https://www.youtube.com/embed/4Q9iCZkzTUk" title="How to Play Go" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</main>
+
+		<br>
+		<br>
+		<br>
+
+		<!----- FOOTER ----->
+		<footer>
+			<hr>
+			<span>&copy; Copyright 2022 JH Chong. All Rights Reserved.</span>
+		</footer>
 	</div>
 
-	<!-- JavaScript -->
-	<script type="text/javascript" src="js/"></script>
+	<!----- JavaScript ----->
+	<script type="text/javascript" src="js/script.js" defer></script>
 </body>
 </html>

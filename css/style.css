@@ -20,14 +20,77 @@ body
 .container
 {
 	width: 100%;
-	height: 200vh;
 	font-family: baloo2;
 }
 
-/***************/
-/* Navigation */
-/*************/
-.navigation
+hr
+{
+	width: 100%;
+}
+
+/********************************************************************************/
+/* Navigation
+/********************************************************************************/
+
+/* SIDE MENU */
+#side-menu
+{
+	left: -15%;
+	position: fixed;
+	width: 15%;
+	height: 100%;
+	background: #1e1e1e;
+	z-index: 3;
+}
+
+#side-menu span
+{
+	position: relative;
+	font-size: 3rem;
+	display: flex;
+	justify-content: flex-end;
+	top: 5%;
+	right: 5%;
+}
+
+#side-menu span:hover
+{
+	font-size: 3.2rem;
+	color: #cc0000;
+	transition: all 0.3s ease;
+}
+
+#side-menu ul
+{
+	height: 100%;
+}
+
+#side-menu li
+{
+	position: relative;
+	top: 10%;
+	width: 100%;
+	text-align: center;
+}
+
+#side-menu li a
+{
+	line-height: 3rem;
+	text-decoration: none; /* removes underline */
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+#side-menu li a:hover
+{
+	font-size: 1.7rem;
+	color: #cc0000;
+	transition: all 0.3s ease;
+}
+
+/* MAIN MENU */
+#main-menu
 {
 	position: -webkit-sticky; /* safari, ios, android, chrome */
 	position: -moz-sticky; /* firefox */
@@ -35,62 +98,63 @@ body
 	position: -o-sticky; /* opera */
 	position: sticky;
 	top: 0;
+	z-index: 2;
 	width: 100%;
 	background: #000;
 	z-index: 2;
 }
 
-.navigation ul
+#main-menu ul
 {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+	text-align: center;
 }
 
-.navigation ul li
+#main-menu li
 {
 	display: inline-block;
-	line-height: 4.6875rem;
-}
-
-.navigation ul li a
-{
-	display: block;
-	text-decoration: none; /* removes underline */
-	font-size: 1.1rem;
-	color: #fff;
+	line-height: 5rem;
 	padding: 0 20px;
 }
 
-#side-menu-button
+#main-menu li a
 {
-	display: none;
+	text-decoration: none; /* Removes underline */
+	text-align: center;
+	font-size: 1.2rem;
+	color: #fff;
 }
 
-.navigation ul li:not(#side-menu-button) a:hover /* exclude styling for image alt text */
+#main-menu li:not(#side-menu-button) a:hover
 {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	color: #cc0000;
 	transition: all 0.3s ease;
 }
 
-.navigation hr
+#main-menu #side-menu-button img
 {
-	background: #fff;
+	display: none; /* Change to display: block to make it appear */
+	position: relative;
+	top: 25%;
 }
 
-/*****************/
-/* Introduction */
-/***************/
-.introduction
+/********************************************************************************/
+/* Main content (index.html)
+/********************************************************************************/
+
+/* MAIN */
+#main
 {
 	z-index: 0;
 }
 
+
+/* FIXED BACKGROUND */
 .parallax
 {
-	background: url(../images/home/weiqi_1.jpg) no-repeat fixed 100%;
+	background: url(../images/introduction/weiqi_1.jpg) no-repeat fixed 100%;
 	background-size: cover;
 }
 
@@ -104,5 +168,185 @@ body
 .parallax-spacing h1
 {
 	text-align: center;
-	font-size: 300%;
+	font-size: 250%;
+}
+
+
+/* WHAT IS GO */
+.what-is-go
+{
+	width: 50%;
+	position: relative;
+	left: 25%;
+}
+
+.what-is-go *
+{
+	text-align: center;
+}
+
+/* RULES */
+.rules
+{
+	width: 50%;
+	position: relative;
+	left: 25%;
+}
+
+.rules *
+{
+	text-align: center;
+}
+
+.rules iframe
+{
+	width: 100%;
+	height: 400px;
+}
+
+/********************************************************************************/
+/* Main content (weiqi.html)
+/********************************************************************************/
+
+/* RANKS */
+.ranks
+{
+	width: 50%;
+	position: relative;
+	left: 25%;
+}
+
+.ranks *
+{
+	text-align: center;
+}
+
+.ranks .img-container
+{
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.ranks .img
+{
+	width: 100%;
+	padding: 0 1%;
+}
+
+.ranks .img img
+{
+	width: 100px;
+	height: 100px;
+}
+
+/* LEARN */
+.learn
+{
+	width: 50%;
+	position: relative;
+	left: 25%;
+}
+
+.learn *
+{
+	text-align: center;
+}
+
+.learn img
+{
+	position: relative;
+	left: 25%;
+}
+
+/* CHAMPIONS */
+.champions *
+{
+	text-align: center;
+}
+
+.champions h1
+{
+
+	width: 50%;
+	position: relative;
+	left: 25%;
+}
+
+.champions .player
+{
+	text-align: center;
+}
+
+.champions .player img
+{
+	width: 400px;
+	height: 300px;
+	float: left;
+	padding-right: 30px;
+}
+
+.champions .player div
+{
+	text-align: center;
+	padding-right: 30px;
+	padding-top: 100px;
+}
+
+.champions #player-2 img
+{
+	float: right;
+	padding-right: 0;
+	padding-left: 30px;
+}
+
+.champions #player-2 div
+{
+	text-align: center;
+	padding-left: 30px;
+}
+
+/********************************************************************************/
+/* FOOTER
+/********************************************************************************/
+footer
+{
+	text-align: center;
+}
+
+/********************************************************************************/
+/* RESPONSIVE
+/********************************************************************************/
+@media screen and (max-width: 1000px)
+{
+	.learn img
+	{
+		position: relative;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 720px)
+{
+	#main-menu ul li:not(#side-menu-button) a
+	{
+		display: none;
+	}
+
+	#main-menu #side-menu-button img
+	{
+		display: block;
+		height: 3rem;
+		position: relative;
+		top: 0;
+	}
+}
+
+@media screen and (max-width: 540px)
+{
+	.learn img
+	{
+		position: relative;
+		left: -40%;
+	}
 }
